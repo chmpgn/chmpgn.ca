@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr-CA"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head><body>
+<title>CHMPGN Immobilier</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+<div class="soon band">
+  <header class="wrap soon-top">
+    <span class="mark">CHMPGN<i>.</i></span>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button id="lang-fr" type="button" aria-pressed="true">FR</button>
+      <button id="lang-en" type="button" aria-pressed="false">EN</button>
+    </div>
+    <button id="gate-open" type="button" class="btn ghost">Accès privé</button>
+  </header>
+  <main class="wrap soon-main">
+    <div class="hero-copy">
+      <p class="eyebrow" data-en="Benedict Champagne · Residential real estate · Québec City area">Benedict Champagne · Immobilier résidentiel · Région de Québec</p>
+      <h1 data-en="The bottle is chilling.">La bouteille est au frais.</h1>
+      <p class="lead" data-en="CHMPGN opens in 2027. A new way to buy and sell a property in the Québec City area: everything is seen in 3D, every decision is costed, the client comes first.">CHMPGN ouvre en 2027. Une nouvelle façon d'acheter et de vendre une propriété dans la région de Québec : tout se voit en 3D, chaque décision est chiffrée, le client passe en premier.</p>
+      <form id="gate" class="gate" hidden novalidate>
+        <label><span data-en="Password">Mot de passe</span><input id="gate-pass" type="password" autocomplete="current-password"></label>
+        <button class="btn" type="submit" data-en="Enter">Entrer</button>
+        <p id="gate-msg" role="status" hidden></p>
+      </form>
+      <ul class="soon-pts"><li data-en="No vowels. No detours.">Sans voyelles. Sans détour.</li><li data-en="Opening in 2027">Ouverture en 2027</li></ul>
+    </div>
+    <div class="soon-vis"><canvas id="house" aria-label="Maison filaire en 3D"></canvas></div>
+  </main>
+  <footer class="wrap soon-foot"><span data-en="chmpgn.ca · Québec City area">chmpgn.ca · Région de Québec</span></footer>
+</div>
+<script src="gate.js"></script>
+<script src="bientot.js"></script>
+</body></html>
